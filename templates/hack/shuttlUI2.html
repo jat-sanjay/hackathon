@@ -1,0 +1,121 @@
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Our Project</title>
+    <meta content="Shuttl - App Based Office Bus" property="og:title">
+    <style>
+        button::-moz-focus-inner,
+        input::-moz-focus-inner {
+            border: 0;
+            padding: 0;
+        }
+
+    </style>
+    <meta content="Shuttl" property="og:site_name">
+    <meta content="https://m.shuttl.com/" property="og:url">
+    <meta content="https://m.shuttl.com/resources/images/shuttl_logo_200.png" property="og:image">
+    <meta content="Shuttl is the coolest and smartest way to commute in Delhi NCR and Kolkata." property="og:description">
+    <meta name="description" content="Shuttl is the coolest and smartest way to commute in Delhi NCR and Kolkata.">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="mobileoptimized" content="0">
+    <meta name="keywords" content="Shuttl, Shuttl is the future of public, transport, Startup, Sequoia, Commute, App, Technology, Delhi, Gurgaon, Kolkata, Transport, Car Free Day, Bus">
+    <meta name="apple-itunes-app" content="app-id=1043422614, app-argument=https://geo.itunes.apple.com/in/app/shuttl-cool-smart-bus/id1043422614?mt=8">
+    <link rel="manifest" href="http://m.shuttl.com/manifest.json">
+    <meta name="theme-color" content="#384248">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="msapplication-navbutton-color" content="#384248">
+    <link rel="shortcut icon" sizes="192x192" href="http://m.shuttl.com/resources/images/shuttl_logo_new.png">
+    <link rel="apple-touch-icon" href="http://m.shuttl.com/resources/images/shuttl_logo_new.png">
+    <link rel="apple-touch-startup-image" href="http://m.shuttl.com/resources/images/apple_startup_image.png">
+    <link rel="publisher" href="https://play.google.com/store/apps/details?id=app.goplus.in.myapplication">
+    <link rel="stylesheet" href="http://m.shuttl.com/resources/main.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500" rel="stylesheet">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+
+
+
+    <script type="text/javascript">
+        $(document).ready(function() {
+
+
+            result = {
+                {
+                    thejson
+                }
+            };
+            console.log(result)
+
+            var all_div = "";
+            var myBooks = ["delhi kldjhcjvdkwhvjb", "kota shjgdfjskjfg", "noida jdhgfjhvjhvdbj", "india hqsgdhsvjshdkfvg", "tamilnadu", "lalaknbjvc nkbjsvcbnkxcsbdhigcvhsjbdkc", "kchjvgdsjhv dhgusdsjvdjbdgufy dhigufudvh"];
+
+            for (var i = 0; i < myBooks.length; i++) {
+
+                all_div = all_div + '<div><div class="pickup-point-icon" style="display: inline-block; height: 22px; width: 9px; background-color: white; background-position: center center; background-repeat: no-repeat; background-image: url(&quot;/resources/images/pickup-point.svg&quot;);"></div><span style="font-size: 16px; color: rgb(33, 33, 33); padding-left: 20px; position: relative; top: -8px; left: 5px;">' + myBooks[i] + '</span><div style="width: 2px; height: 36px; border-left: 2px solid rgb(192, 192, 192); margin-top: 10px; margin-bottom: 10px; margin-left: 4px;"></div></div>'
+
+            }
+            $("#my_route_list").append(all_div);
+
+            var triptime = 'Trip Time : 2 Hr 30 Min';
+            $("#trip_time").append(triptime)
+
+            var tripfare = 'Trip Fare : 254 Rs';
+            $("#trip_fare").append(tripfare)
+        });
+
+    </script>
+
+
+</head>
+
+<body class="body">
+
+    <div id="container">
+        <div data-reactroot="">
+            <div style="background: rgb(255, 255, 255); position: fixed; top: 0px; bottom: 0px; left: 0px; right: 0px; z-index: -1;"></div>
+            <div style="color: rgb(127, 127, 127); background-color: rgb(56, 66, 72); transition: all 450ms cubic-bezier(0.23, 1, 0.32, 1) 0ms; box-sizing: border-box; font-family: Roboto, sans-serif; -webkit-tap-highlight-color: rgba(0, 0, 0, 0); box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 6px, rgba(0, 0, 0, 0.12) 0px 1px 4px; border-radius: 0px; position: relative; z-index: 1100; width: 100%; display: flex; padding-left: 24px; padding-right: 24px;">
+                <h1 style="white-space: nowrap; overflow: hidden; text-overflow: ellipsis; margin: 0px; padding-top: 0px; letter-spacing: 0px; font-size: 20px; font-weight: 400; color: rgb(255, 255, 255); height: 56px; line-height: 56px; flex: 1 1 0%;">Route Shuttl</h1>
+                <div style="margin-top: 4px; margin-right: -16px; margin-left: auto;">
+                    <div></div>
+                </div>
+            </div>
+            <div>
+                <div style="display: none;">
+                    <div style="z-index: 999; position: fixed; display: flex; align-items: center; -webkit-box-pack: center; justify-content: center; background-color: rgba(255, 255, 255, 0.7); top: 0px; left: 0px; right: 0px; bottom: 0px;">
+                        <div class="uil-ripple-css" style="transform: scale(0.69); height: 72px; width: 72px;">
+                            <div></div>
+                            <div></div>
+                        </div>
+                    </div>
+                </div>
+                <div style="color: rgb(127, 127, 127); background-color: rgb(255, 255, 255); transition: all 450ms cubic-bezier(0.23, 1, 0.32, 1) 0ms; box-sizing: border-box; font-family: Roboto, sans-serif; -webkit-tap-highlight-color: rgba(0, 0, 0, 0); box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 6px, rgba(0, 0, 0, 0.12) 0px 1px 4px; border-radius: 2px; z-index: 1; margin: 12px 8px; position: relative;">
+                    <div style="padding-bottom: 8px;">
+                        <div style="padding: 0px; font-size: 14px; color: rgb(127, 127, 127);">
+                            <div id="trip_time" style="color: rgb(62, 182, 181); height: 48px; font-size: 20px; line-height: 2.4; text-align: center; background-color: rgba(0, 173, 183, 0.15);">
+
+                                <!-- Trip Time .     -->
+
+                            </div>
+                            <div id="trip_fare" style="color: rgb(62, 182, 181); height: 48px; font-size: 20px; line-height: 2.4; text-align: center; background-color: rgba(0, 173, 183, 0.15);">
+                                <!-- Trip Fare .     -->
+
+                            </div>
+                            <div style="display: flex; justify-content: space-around; flex-direction: column; text-align: left; padding-left: 30px; padding-top: 30px; padding-bottom: 30px;">
+
+                                <div id="my_route_list">
+
+                                    <!-- Route List     -->
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
