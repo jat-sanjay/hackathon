@@ -3,20 +3,11 @@ import requests
 url = "https://www.makemytrip.com/pwa/framework/hotel/listing/scroll"
 
 querystring = {
-    "checkin":"12062019",
-    "checkout":"12072019",
+    "checkin":"07062018",
+    "checkout":"07072018",
     "city":"RAJ",
     "country":"IN",
     "limit":"2500000",
-    "pageNumber":"1",
-    "roomStayQualifier":"2e0e",
-    "firstTimeUserState":"0",
-    "loggedIn":"false",
-    "trafficSrc":"null",
-    "filters":"",
-    "sorter":"",
-    "lastFetchedHotelId":"201601081207013687",
-    "isAllHotelsFetched":"false",
     "roomCount":"1"
 }
 
@@ -26,5 +17,23 @@ headers = {
     }
 
 response = requests.request("GET", url, headers=headers, params=querystring)
+data = response.json().get("data")
+for item in data:
+    hotel_id = item.get("data").get("hotel_id")
+    hote_name = item.get("data").get("hotel_name")
+    hotel_address1 = item.get("data").get("hotel_address").get("line1")
+    hotel_address2 = item.get("data").get("hotel_address").get("line2")
+    hotel_address =""
+    if hotel_address1 and hotel_address2:
+        hotel_address = hotel_address1 + hotel_address2
+    elif hotel_address1:
+        hotel_address = hotel_address1
+    elif hotel_address2:
+        hotel_address = hotel_address2
+    else:
+        hotel_address = "No address of this hotel"
 
-print(response.text)
+    print (hotel_address)
+
+
+
